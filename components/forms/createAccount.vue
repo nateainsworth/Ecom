@@ -14,7 +14,8 @@
         .min(6, 'Password must be at least 6 characters')
         .test('password-strength', 'Password is too weak.', (value) => {
           const result = zxcvbn(value as string);
-          const scoreThreshold = 3; // You can adjust this threshold based on your desired strength level.
+          //TODO: maybe worth changing to ENV or database value for the specific site threshold score
+          const scoreThreshold = 3; 
           return result.score >= scoreThreshold;
         })
         .required('Password is a required field'),

@@ -11,12 +11,6 @@
         .required('Email is a required field'),
     password: yup
         .string()
-        .min(6, 'Password must be at least 6 characters')
-        .test('password-strength', 'Password is too weak.', (value) => {
-          const result = zxcvbn(value as string);
-          const scoreThreshold = 3; // You can adjust this threshold based on your desired strength level.
-          return result.score >= scoreThreshold;
-        })
         .required('Password is a required field'),
   });
 
