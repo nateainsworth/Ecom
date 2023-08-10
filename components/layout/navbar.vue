@@ -10,7 +10,7 @@
 </script>
 
 <template> 
-<nav class="navbar shadow-lg sticky top-0  w-full z-10">
+<nav class="navbar shadow-lg sticky top-0 w-full z-10 bg-white">
   <div class="max-w-6xl mx-auto">
     <div class="navbar-nav nav-btns grid grid-cols-12 place-content-center p-4">
       <div class="col-span-9 self-center">

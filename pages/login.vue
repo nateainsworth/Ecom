@@ -1,9 +1,9 @@
 <script setup lang="ts">
     definePageMeta({
-        title: 'Login'
+        layout: 'login',
+        title: 'Login',
     })
 </script>
 <template>
-
-    
+    <FormsLogin/>
 </template>

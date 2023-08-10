@@ -1,8 +1,13 @@
 <script setup lang="ts">
+
     const filters= ref(true)
 
+    useHead({
+        title: "Shop"
+    });
+    
     definePageMeta({
-        title: 'Shop Home'
+        title: 'Shop'
     })
 </script>
 <template>
